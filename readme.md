@@ -4,7 +4,7 @@ A demo application to illustrate how [Inertia.js](https://inertiajs.com/) works 
 
 > This is a port of the original [DuitSaku](https://github.com/adrespranata/DuitSaku) written in Laravel and React.
 
-![Screenshot](<(https://raw.githubusercontent.com/adrespranata/DuitSaku/main/public/Images/DuitSaku.png)>)
+![](https://raw.githubusercontent.com/adrespranata/DuitSaku/main/public/Images/DuitSaku.png)
 
 ## Installation
 
