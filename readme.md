@@ -2,17 +2,17 @@
 
 A demo application to illustrate how [Inertia.js](https://inertiajs.com/) works with [Laravel](https://laravel.com/) and [React](https://react.dev/).
 
-> This is a port of the original [Duit Saku](https://github.com/inertiajs/pingcrm) written in Laravel and Vue.
+> This is a port of the original [DuitSaku](https://github.com/adrespranata/DuitSaku) written in Laravel and Vue.
 
-![Screenshot](<(https://raw.githubusercontent.com/yourusername/yourrepo/main/screenshot.png)>)
+![Screenshot](<(https://raw.githubusercontent.com/adrespranata/DuitSaku/refs/heads/main/public/Images/DuitSaku.png)>)
 
 ## Installation
 
 Clone the repo locally:
 
 ```sh
-git clone https://github.com/liorocks/pingcrm-react.git
-cd pingcrm-react
+git clone https://github.com/adrespranata/DuitSaku.git
+cd DuitSaku
 ```
 
 Install PHP dependencies:
