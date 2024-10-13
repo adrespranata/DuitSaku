@@ -1,4 +1,4 @@
-# Ping CRM React
+# DuitSaku
 
 A demo application to illustrate how [Inertia.js](https://inertiajs.com/) works with [Laravel](https://laravel.com/) and [React](https://react.dev/).
 
