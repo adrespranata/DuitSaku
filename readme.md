@@ -2,7 +2,7 @@
 
 A demo application to illustrate how [Inertia.js](https://inertiajs.com/) works with [Laravel](https://laravel.com/) and [React](https://react.dev/).
 
-> This is a port of the original [DuitSaku](https://github.com/adrespranata/DuitSaku) written in Laravel and Vue.
+> This is a port of the original [DuitSaku](https://github.com/adrespranata/DuitSaku) written in Laravel and React.
 
 <!-- ![Screenshot](<(https://raw.githubusercontent.com/adrespranata/DuitSaku/refs/heads/main/public/Images/DuitSaku.png)>) -->
 
