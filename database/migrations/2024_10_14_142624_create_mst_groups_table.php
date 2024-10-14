@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('mst_group', function (Blueprint $table) {
+        Schema::create('mst_groups', function (Blueprint $table) {
             $table->string('id')->primary();
             $table->string('name')->unique();
             $table->text('description')->nullable();
@@ -24,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('mst_group');
+        Schema::dropIfExists('mst_groups');
     }
 };

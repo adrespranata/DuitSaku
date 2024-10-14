@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class MstGroup extends Model
 {
     use HasFactory;
-    protected $table = 'mst_group';
+    protected $table = 'mst_groups';
     protected $fillable = [ 
         'id',
         'name',
