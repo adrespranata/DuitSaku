@@ -68,6 +68,6 @@ class MstUser extends Authenticatable
      */
     public function group()
     {
-        return $this->belongsTo(MstGroup::class, 'id_group', 'id_group');
+        return $this->belongsTo(MstGroup::class, 'id_group', 'id');
     }
 }
