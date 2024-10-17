@@ -9,9 +9,15 @@ class MstGroup extends Model
 {
     use HasFactory;
     protected $table = 'mst_groups';
-    protected $fillable = [ 
+    protected $fillable = [
         'id',
         'name',
         'description'
     ];
+
+    // Mendefinisikan relasi ke MstUser
+    public function users()
+    {
+        return $this->hasMany(MstUser::class, 'id_group', 'id_group');
+    }
 }

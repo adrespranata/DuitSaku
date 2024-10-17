@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-class User extends Authenticatable
+class MstUser extends Authenticatable
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory, Notifiable;
@@ -20,7 +20,11 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'email',
+        'username',
         'password',
+        'id_group',
+        'is_active',
+        'email_verified_at',
     ];
 
     /**
@@ -44,5 +48,26 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+
+    /**
+     * Get the user detail associated with the MstUser
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne<MstUserD>
+     */
+    public function userDetail()
+    {
+        return $this->hasOne(MstUserD::class, 'user_id');
+    }
+
+    /**
+     * Get the group associated with the MstUser
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<MstGroup>
+     */
+    public function group()
+    {
+        return $this->belongsTo(MstGroup::class, 'id_group', 'id_group');
     }
 }

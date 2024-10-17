@@ -18,14 +18,16 @@ class MstGroupSeeder extends Seeder
             'name'          => 'Unassigned',
             'description'   => 'Unassigned'
         ]);
+
         MstGroup::create([
             'id'            => 1,
-            'name'          => 'Administrator',
+            'name'          => 'Superadmin',
             'description'   => 'Administrator'
         ]);
+
         MstGroup::create([
             'id'            => 2,
-            'name'          => 'Reguler User',
+            'name'          => 'User',
             'description'   => 'Regular User'
         ]);
     }
