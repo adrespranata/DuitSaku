@@ -19,7 +19,8 @@ class DatabaseSeeder extends Seeder
             MstRegencySeeder::class,
             MstDistrictSeeder::class,
             MstPostalCodeSeeder::class,
-            MstGroupSeeder::class
+            MstGroupSeeder::class,
+            MstRouteSeeder::class
         ]);
     }
 }
