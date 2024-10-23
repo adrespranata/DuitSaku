@@ -19,18 +19,8 @@ return new class extends Migration
             $table->enum('gender', ['M', 'F'])->nullable();
             $table->date('birth_date')->nullable();
             $table->string('avatar')->nullable();
-            $table->string('occupation')->nullable();
             $table->string('phone', 15)->nullable()->unique();
-            $table->string('address')->nullable();
-
-            /* Foreign key constraint */
-            $table->foreignId('postal_code_id')->nullable()->constrained('mst_postal_codes');
-            $table->foreignId('regency_id')->nullable()->constrained('mst_regencies');
-            $table->foreignId('district_id')->nullable()->constrained('mst_districts');
-            $table->foreignId('province_id')->nullable()->constrained('mst_provinces');
-            $table->foreignId('country_id')->nullable()->constrained('mst_countries');
             $table->timestamps();
-
             /* Foreign key constraint */
             $table->foreign(columns: 'user_id')->references('id')->on('mst_users')->onDelete('cascade');
         });

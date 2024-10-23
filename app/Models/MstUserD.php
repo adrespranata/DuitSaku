@@ -13,21 +13,17 @@ class MstUserD extends Model
 
     protected $fillable = [
         'user_id',
+        'first_name',
+        'middle_name',
+        'last_name',
+        'gender',
+        'birth_date',
+        'avatar',
         'phone',
-        'province',
-        'regency',
-        'district',
-        'postal_code',
-        'address'
     ];
 
-    /**
-     * Get the user associated with the user detail.
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<MstUser>
-     */
     public function user()
     {
-        return $this->belongsTo(MstUser::class, 'user_id', 'id');
+        return $this->belongsTo(MstUser::class, 'user_id');
     }
 }

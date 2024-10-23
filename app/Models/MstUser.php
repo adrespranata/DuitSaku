@@ -18,13 +18,12 @@ class MstUser extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
         'email',
         'username',
         'password',
         'id_group',
         'is_active',
-        'email_verified_at',
+        'email_verified_at'
     ];
 
     /**
@@ -50,24 +49,18 @@ class MstUser extends Authenticatable
         ];
     }
 
+    public function group()
+    {
+        return $this->belongsTo(MstGroup::class, 'id_group');
+    }
 
-    /**
-     * Get the user detail associated with the MstUser
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\HasOne<MstUserD>
-     */
-    public function userDetail()
+    public function userDetails()
     {
         return $this->hasOne(MstUserD::class, 'user_id');
     }
 
-    /**
-     * Get the group associated with the MstUser
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<MstGroup>
-     */
-    public function group()
+    public function addresses()
     {
-        return $this->belongsTo(MstGroup::class, 'id_group', 'id');
+        return $this->hasMany(MstAddress::class, 'user_id');
     }
 }
